@@ -68,7 +68,7 @@ abstract class Controller extends BaseController
             }
 
             // Value is saved from $row->details->column row
-            if ($row->type == 'relationship' && $row->details->type == 'belongsTo') {
+            if ($row->type == 'relationship' && $row->details->type != 'belongsTo') {
                 continue;
             }
 
